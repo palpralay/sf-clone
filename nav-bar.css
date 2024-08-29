@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+
+
+  /* outline: 1px solid #f005; */
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+:root {
+  --nav-h: 50px;
+  --bg-base: #121212;
+  --bg-noise: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=);
+}
+
+body {
+  position: relative;
+  width: 100svw;
+  height: 100svh;
+}
+
+.main-body {
+  --full-hav-h: calc(var(--nav-h) + 10px);
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-rows: var(--full-hav-h) calc(100svh - var(--full-hav-h));
+  gap: 2px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+header .nav-bar {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 8fr 9fr 8fr;
+  padding: 6px;
+}
+header .nav-bar .spotify-logo {
+  position: relative;
+  width: calc(var(--nav-h) * 1.4);
+  height: calc(var(--nav-h));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-bar .spotify-logo i {
+  position: relative;
+  font-size: 32px;
+  color: #fff;
+}
+
+header .nav-bar .search-bar {
+  position: relative;
+  width: 100%;
+  height: var(--nav-h);
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 7fr;
+}
+header .nav-bar .search-bar .home {
+  border-radius: 50%;
+  padding: 8px;
+  background-color: rgb(31, 31, 31);
+}
+header .nav-bar .search-bar .home i {
+  color: rgba(255, 255, 255, 0.948);
+  font-size: 30px;
+}
+.nav-bar .search-bar .search {
+  --m: 1px;
+  position: relative;
+  width: calc(100% - var(--m) * 2);
+  height: calc(100% - var(--m) * 2);
+  display: grid;
+  place-items: center;
+  margin: var(--m);
+  background-color: #1f1f1f;
+  border-radius: 40px;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+.nav-bar .search-bar .search i {
+  font-size: 1.6rem;
+  color: #ffffff97;
+}
+.nav-bar .search-bar .search input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+}
+.nav-bar .search-bar .search .new {
+  position: relative;
+  width: calc(var(--nav-h) * 0.5);
+  height: calc(var(--nav-h) * 0.5);
+  display: grid;
+  align-items: center;
+}
+.nav-bar .search-bar .search .new::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 90%;
+  left: -10px;
+  background: #fff9;
+  z-index: 3;
+}
+.nav-bar .search-bar .search .new svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: #fff9;
+}
+
+
+
+header .nav-bar .exp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 120px 40px 50px;
+  gap: 10px;
+  place-items: center;
+}
+header .nav-bar .exp .explore {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 35px;
+  height: 32px;
+  padding: 10px 12px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+.exp .download-logo {
+  position: relative;
+  display: flex;
+  gap: 5px;
+}
+.exp .download-logo i {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: solid 2px #fff;
+  place-items: center;
+  display: grid;
+  font-size: 10px;
+  color: #fff;
+}
+
+.exp .download-logo a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.exp .bell {
+  position: relative;
+  font-size: 18px;
+  color: #ffffffb9;
+}
+
+.exp .user {
+  border-radius: 50%;
+  width: calc(var(--nav-h) * 0.65);
+  height: calc(var(--nav-h) * 0.65);
+  display: grid;
+  place-items: center;
+  color: #000;
+  font-size: 1.3rem;
+  background-color: rgb(125, 75, 50);
+  outline: 8px solid rgb(31, 31, 31);
+  transition: transform 0.3s ease;
+}
+
+.exp .user:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.exp .bell:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.exp a:hover {
+  text-decoration: underline;
+}
+
+.nav-bar .spotify-logo i:hover {
+  cursor: pointer;
+}
+
+.nav-bar .search-bar .home i:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.search input:hover {
+  cursor: pointer;
+}
+
+.exp .explore:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

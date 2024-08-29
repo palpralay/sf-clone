@@ -1,0 +1,348 @@
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 6fr 17fr;
+  gap: 8px;
+  padding: 1px 8px;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.main-container .scroll {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #b8182066;
+  transition: 500ms background;
+}
+.main-container .scroll::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    #0000,
+    #0009,
+    #121212 30%,
+    #121212 100%
+  );
+}
+
+.main-container .menu-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  height: 65px;
+  padding: 18px;
+  width: 100%;
+  z-index: 2;
+}
+
+.main-container .menu-bar .all,
+.main-container .menu-bar .music,
+.main-container .menu-bar .podcasts {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  background-color: #fff1;
+  border-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main-container .menu-bar .all {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-container .menu-bar .all,
+.music,
+.podcasts:hover {
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------- */
+.music-grid {
+  --h: 50px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  height: var(--h);
+  width: 100%;
+  gap: 10px;
+  padding: 0 20px;
+  z-index: 2;
+  margin-top: 15px;
+}
+
+.music-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: var(--h) 1fr;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+}
+
+.music-item .singer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.music-item .singer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.music-item p {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  padding-right: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+  transition: ease-in-out 200ms background-color;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.music-item:hover p {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.main-container .scroll:has( .music-item:first-child:hover) {
+  background: #1840b866;
+}
+.main-container .scroll:has( .music-item:nth-child(2):hover) {
+  background: #1bb81866;
+}
+.main-container .scroll:has( .music-item:nth-child(3):hover) {
+  background: #b818a566;
+}
+.main-container .scroll:has( .music-item:last-child:hover) {
+  background: #18b8ad66;
+}
+
+.music-item .play-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 5px;
+  background-color: rgba(14, 195, 14, 0.932);
+  border-radius: 50%;
+  padding: 5px;
+  color: #000;
+  font-size: 23px;
+  opacity: 0;
+  z-index: 3;
+  box-shadow: 0 2px 3px #000;
+  transition: ease-in-out 200ms opacity;
+}
+
+.music-grid .music-item:hover .play-btn {
+  opacity: 1;
+}
+/* -------------------------------------------------- */
+
+.more {
+  position: relative;
+  display: flex;
+  width: calc(100% - 25px);
+  margin: 0 10px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.more a {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+  padding: 0 10px;
+  gap: 5px;
+}
+
+.card-grid .card {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.daily-mix img {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.daily-mix {
+  position: relative;
+}
+
+.card p {
+  color: gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  letter-spacing: 0.5px;
+}
+
+.more h1 {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+}
+
+.more h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.more a {
+  text-decoration: none;
+  color: gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.more a:hover {
+  text-decoration: underline;
+}
+
+.card .play-icon {
+  position: absolute;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(99, 233, 99);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 3px #000;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+  transition: ease-in-out 200ms opacity;
+}
+
+.card-grid .card:hover .play-icon {
+  opacity: 1;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  /* padding: 10px; */
+}
+.card-grid {
+  cursor: pointer;
+}
+/* ------------------------------------- */
+
+.card.circle img {
+  border-radius: 50%;
+}
+/* ---------------------------- */
+.card .white {
+  color: white;
+}
+
+/* ---------------footer-------------------------------- */
+.footer-body {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  height: auto;
+  padding: 50px 30px;
+}
+
+.footer-body .foot {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-body a {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: gray;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer-body li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+.footer-body .social-media {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.footer-body a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.copyright {
+  position: relative;
+  padding: 0 40px;
+  width: 100%;
+  height: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+}
+.copyright p {
+  position: relative;
+  color: #6c6868;
+}
+.copyright p:last-child {
+  position: absolute;
+  right: 0;
+  padding: 0 40px;
+}
+.copyright p:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.line {
+  position: relative;
+  height: 1px;
+  width: 94%;
+  background-color: #545454;
+  margin: 0 3%;
+}

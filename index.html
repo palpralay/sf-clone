@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="container.css" />
+    <link rel="stylesheet" href="library.css" />
+    <link rel="stylesheet" href="./icons/css/icon.css" />
+    <!-- <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
+    /> -->
+    <title>SF clone</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <!---------------------------------search bar--------------------------------------------->
+      <header>
+        <div class="nav-bar">
+          <div class="spotify-logo"><i class="sbi-spotify"></i></div>
+
+          <div class="search-bar">
+            <div class="home">
+              <div class="home-logo"><i class="sbi-home-filled"></i></div>
+            </div>
+            <div class="search">
+              <i class="sbi-search1"></i>
+              <input type="text" placeholder="What do you want to play?" />
+              <div class="new">
+                <svg
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  color="#fff"
+                >
+                  <path
+                    d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"
+                  ></path>
+                  <path
+                    d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9H3.525zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4V2z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp">
+            <div class="explore">Explore Premium</div>
+            <div class="download-logo">
+              <i class="sbi-arrow-down2"></i>
+              <a href="#">Install App</a>
+            </div>
+            <div class="bell">
+              <i class="sbi-bell-o"></i>
+            </div>
+            <div class="user"><i class="sbi-person"></i></div>
+          </div>
+        </div>
+      </header>
+      <!--------------------------------------------------------------------------------------->
+      <!------------------------------------container------------------------------------------>
+      <section>
+        <div class="library">
+          <div class="lib-icon">
+            <div class="svg">
+              <svg
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                class="Svg-sc-ytk21e-0 bneLcE"
+                id="_"
+              >
+                <path
+                  d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                ></path>
+              </svg>
+            </div>
+            <h4>Your Library</h4>
+            <i class="sbi-add"></i>
+            <i class="sbi-arrow-forward"></i>
+          </div>
+          <div class="artists">Artists</div>
+          <div class="recent">
+            <i class="sbi-search1"></i>
+            <div class="right">
+              <p>Recents</p>
+              <i class="sbi-list3"></i>
+            </div>
+          </div>
+          <div class="liked-song">
+            <div class="love">
+              <i class="sbi-favorite"></i>
+            </div>
+            <div class="dtls">
+              <p>Liked Songs</p>
+              <div class="sub">
+                <i class="sbi-pin"></i>
+                <p>Playlist<span class="sbi-dot-single"></span>4 songs</p>
+              </div>
+            </div>
+          </div>
+          <!------------------------------------------>
+          <div class="artist-list">
+            <div class="artist">
+              <img src="./images/daily mix 4.png" alt="Diljit Dosanjh" />
+              <div class="info">
+                <h3>Diljit Dosanjh</h3>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artist">
+              <img src="./images/shreya 2010s mix.png" alt="Shreya Ghoshal" />
+              <div class="info">
+                <h3>Shreya Ghoshal</h3>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artist">
+              <img src="./images/kk.png" alt="KK" />
+              <div class="info">
+                <h3>KK</h3>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artist">
+              <img src="./images/arijit.png" alt="Arijit Singh" />
+              <div class="info">
+                <h3>Arijit Singh</h3>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artist">
+              <img src="./images/daily mix 3.png" alt="Shubh" />
+              <div class="info">
+                <h3>Shubh</h3>
+                <p>Artist</p>
+              </div>
+            </div>
+            <div class="artist">
+              <img src="./images/badshah.png" alt="Badshah" />
+              <div class="info">
+                <h3>Badshah</h3>
+                <p>Artist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-container">
+          <div class="scroll">
+            <div class="menu-bar">
+              <div class="all">All</div>
+              <div class="music">Music</div>
+              <div class="podcasts">Podcasts</div>
+            </div>
+            <div class="music-grid">
+              <div class="music-item">
+                <div class="singer">
+                  <img src="./images/fatehi ali khan.png" alt="" />
+                </div>
+                <div class="play-btn"><i class="sbi-play-arrow"></i></div>
+                <p>Best Of Rahat Fateh Ali Khan</p>
+              </div>
+              <div class="music-item">
+                <div class="singer">
+                  <img src="./images/kk mix.png" alt="" />
+                </div>
+                <div class="play-btn"><i class="sbi-play-arrow"></i></div>
+                <p>KK Mix</p>
+              </div>
+              <div class="music-item">
+                <div class="singer">
+                  <img src="./images/kk.png" alt="" />
+                </div>
+                <div class="play-btn"><i class="sbi-play-arrow"></i></div>
+                <p>KK</p>
+              </div>
+              <div class="music-item">
+                <div class="singer">
+                  <img src="./images/arijit singh.png" alt="" />
+                </div>
+                <div class="play-btn"><i class="sbi-play-arrow"></i></div>
+                <p>Arijit Singh</p>
+              </div>
+            </div>
+  
+            <!--------------------------------------made for you--------------------------------->
+            <div class="more">
+              <h1>Made for You</h1>
+              <a href="#" class="showall">Show all</a>
+            </div>
+            <div class="card-grid">
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/daily mix 1.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Pritam, Javed-Mohsin, Shankar-Ehsaan-Loy...</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/daily mix 2.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Jasleen Royal, Rahat Fateh Ali Khan, VIBIE...</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/daily mix 3.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Shubh and AP Dhillon</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/daily mix 4.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Diljit Dosanjh, Jawad Ahmad, Javed-Mohsi...</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/discover weekly.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Your weekly mixtape of fresh music. Enjoy...</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/daily mix 5.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Catch all the latest music from artists yo...</p>
+              </div>
+            </div>
+            <!---------------------////////////////////------------------------------------->
+            <!--------------------------------your top mixes-------------------------------->
+            <div class="more">
+              <h1>Your Top Mixes</h1>
+              <a href="#" class="showall">Show all</a>
+            </div>
+            <div class="card-grid">
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/shreya.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>KK, Vishal-shekher and Tulsi Kumar</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/shreya 2010s mix.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Shreya Ghoshal, Badshsh, Anupam Roy and more</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/romantic mix.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Vishal-Shekhar, Sachin-Jigar, Pritam...</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/2000s mix.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Pritam, Vishal-Shekhar, KK and more</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/arijit.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Arijit Singh, Tulsi Kumar, KK and more</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/badshah.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Shubh, Tulsi Kumar and Vishal-Shekhar</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/pritam mix.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p>Anirudh Ranvichander, Badshah and...</p>
+              </div>
+            </div>
+            <!--------------------------------////////////////////////////------------------->
+            <!--------------------------------recently played-------------------------------->
+            <div class="more">
+              <h1>Recently Played</h1>
+              <a href="#" class="showall">Show all</a>
+            </div>
+            <div class="card-grid">
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/fatehi ali khan.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">BEST OF RAHAT FATEH ALI KHAN</p>
+                <p>By Zusic India</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/kk mix.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">KK MIX</p>
+                <p>Pritam, Mohit Chauhan and Mada...</p>
+              </div>
+              <div class="card circle">
+                <div class="daily-mix">
+                  <img src="./images/kk.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">KK</p>
+                <p>Artist</p>
+              </div>
+  
+              <div class="card circle">
+                <div class="daily-mix">
+                  <img src="./images/arijit.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Arijit Singh</p>
+                <p>Artist</p>
+              </div>
+            </div>
+            <!----------------------------///////////////////////------------------------->
+            <!-----------------------------recommended for you---------------------------->
+            <div class="more">
+              <h1>Recommended for today</h1>
+              <a href="#" class="showall">Show all</a>
+            </div>
+            <div class="card-grid">
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/sang.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Sang Rahiyo</p>
+                <p>Jasleen Royal</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/bekhayali.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Bekhayali (From "Kabir Singh")</p>
+                <p>Sachet Tandon, Sachet-Parampara</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/yrf.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">YRF Top 10- Falling in Love</p>
+                <p>Atif Aslam</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/zindagi.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Zindagi Do Pal Ki-K.K. All Tims Hits</p>
+                <p>KK</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/yeh.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Yeh Jawaani Hai Deewani</p>
+                <p>Pritam</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/kill-dill.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Kill Dil</p>
+                <p>Shankar-Ehsaan-Loy</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/tiger.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Tiger Zinda Hai</p>
+                <p>Vishal-Shekhar, JuliusPackiam</p>
+              </div>
+            </div>
+            <!-----------------------------------/////////////////------------------------>
+            <!-----------------------------------shows to try----------------------------->
+            <div class="more">
+              <h1>Shows to try</h1>
+              <a href="#" class="showall">Show all</a>
+            </div>
+            <div class="card-grid">
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/bongo-kotha.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Bongo kotha (Bengali Story Podcast)</p>
+                <p>Dibyendu Das</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/the stories.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">The Stories of Mahabharata</p>
+                <p>Sudipta Bhawmik</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/mahavarata.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Mahabharat</p>
+                <p>Fever FM-HT smartcast</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/golpo.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Golpo Solpo (Bengali Audio Stories )</p>
+                <p>Golpo Solpo</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/midnight.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">MIdnight Horror Station Bengali...</p>
+                <p>Sayak Aman</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/gita.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">SHRIMAD BHAGWADGITA</p>
+                <p>Amit Wadhwa</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/bengali.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Bengali Classics by Arnab-Classic...</p>
+                <p>Arnab Koley</p>
+              </div>
+            </div>
+            <!--------------------------------////////////////////////----------------------->
+            <!-------------------for fans of bollywood music--------------------------------->
+            <div class="more">
+              <h1>for fans of bollywood music</h1>
+              <a href="#" class="showall">Show all</a>
+            </div>
+            <div class="card-grid">
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/AR rahaman.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">A.R. Rahaman in conversation with Arijit..</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/sunidhi.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Sunidhi Chauhan On Reality Shows...</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/salim.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Salim Merchant</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/the ranveer.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">The Inspiring Journey Of A LEGEND-A.R...</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/sona.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Sona Mohapata</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/bollywood.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Bollywood Politics, Nepotism & Corrupt...</p>
+              </div>
+  
+              <div class="card">
+                <div class="daily-mix">
+                  <img src="./images/bollywood lyrics.png" alt="" />
+                  <div class="play-icon"><i class="sbi-play3"></i></div>
+                </div>
+                <p class="white">Bollywood Lyrics V/s Hindustani Shayari</p>
+              </div>
+            </div>
+            <!-------------------------------------------footer-------------------------------------->
+            <footer>
+              <div class="footer-body">
+                <ul>
+                  <p class="foot">Company</p>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Jobs</a></li>
+                  <li><a href="">For the Record</a></li>
+                </ul>
+                <ul>
+                  <p class="foot">Communities</p>
+                  <li><a href="">For Artists</a></li>
+                  <li><a href="">Developers</a></li>
+                  <li><a href="">Advertising</a></li>
+                  <li><a href="">Investors</a></li>
+                  <li><a href="">Vendors</a></li>
+                </ul>
+                <ul>
+                  <p class="foot">Useful links</p>
+                  <li><a href="">Support</a></li>
+                  <li><a href="">Free Mobile</a></li>
+                  <li><a href="">App</a></li>
+                </ul>
+                <ul>
+                  <p class="foot">Spotify Plans</p>
+                  <li><a href="">PremiumIndividual</a></li>
+                  <li><a href="">Premium Duo</a></li>
+                  <li><a href="">Premium Family</a></li>
+                  <li><a href="">Spotify Free</a></li>
+                </ul>
+                <div class="social-media">
+                  <i class="sbi-instagram"></i>
+                  <i class="sbi-twitter2"></i>
+                  <i class="sbi-facebook4"></i>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="copyright">
+                <p>Legal</p>
+                <p>Safety & PrivacyCenter</p>
+                <p>PrivacyPolicy</p>
+                <p>Cookies</p>
+                <p>AboutAds</p>
+                <p>Accessibility</p>
+                <p>© 2024 Spotify AB</p>
+              </div>
+              <br />
+              <br />
+            </footer>
+          </div>
+        </div>
+      </section>
+      <!---------------------------------///////////////////////////////----------------------->
+    </div>
+  </body>
+</html>
